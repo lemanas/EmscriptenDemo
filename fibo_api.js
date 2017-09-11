@@ -6231,6 +6231,101 @@ function __ZNSt3__24endlIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_($
  }
  return (0)|0;
 }
+function __Z10returnFiboi($0) {
+ $0 = $0|0;
+ var $1 = 0, $10 = 0, $11 = 0, $12 = 0, $13 = 0, $14 = 0, $15 = 0, $16 = 0, $17 = 0, $18 = 0, $19 = 0, $2 = 0, $20 = 0, $21 = 0, $22 = 0, $23 = 0, $24 = 0, $25 = 0, $26 = 0, $27 = 0;
+ var $28 = 0, $29 = 0, $3 = 0, $30 = 0, $31 = 0, $32 = 0, $33 = 0, $34 = 0, $35 = 0, $36 = 0, $37 = 0, $38 = 0, $39 = 0, $4 = 0, $40 = 0, $41 = 0, $42 = 0, $43 = 0, $44 = 0, $45 = 0;
+ var $46 = 0, $47 = 0, $48 = 0, $49 = 0, $5 = 0, $50 = 0, $51 = 0, $52 = 0, $53 = 0, $54 = 0, $55 = 0, $56 = 0, $57 = 0, $58 = 0, $59 = 0, $6 = 0, $60 = 0, $61 = 0, $62 = 0, $63 = 0;
+ var $64 = 0, $65 = 0, $66 = 0, $7 = 0, $8 = 0, $9 = 0, label = 0, sp = 0;
+ sp = STACKTOP;
+ STACKTOP = STACKTOP + 32|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(32|0);
+ $2 = sp + 16|0;
+ $3 = sp + 8|0;
+ $4 = sp;
+ $1 = $0;
+ $6 = $2;
+ $7 = $6;
+ HEAP32[$7>>2] = 0;
+ $8 = (($6) + 4)|0;
+ $9 = $8;
+ HEAP32[$9>>2] = 0;
+ $10 = $3;
+ $11 = $10;
+ HEAP32[$11>>2] = 1;
+ $12 = (($10) + 4)|0;
+ $13 = $12;
+ HEAP32[$13>>2] = 0;
+ $14 = $4;
+ $15 = $14;
+ HEAP32[$15>>2] = 0;
+ $16 = (($14) + 4)|0;
+ $17 = $16;
+ HEAP32[$17>>2] = 0;
+ $5 = 1;
+ while(1) {
+  $18 = $5;
+  $19 = $1;
+  $20 = ($18|0)<=($19|0);
+  if (!($20)) {
+   break;
+  }
+  $21 = $2;
+  $22 = $21;
+  $23 = HEAP32[$22>>2]|0;
+  $24 = (($21) + 4)|0;
+  $25 = $24;
+  $26 = HEAP32[$25>>2]|0;
+  $27 = $3;
+  $28 = $27;
+  $29 = HEAP32[$28>>2]|0;
+  $30 = (($27) + 4)|0;
+  $31 = $30;
+  $32 = HEAP32[$31>>2]|0;
+  $33 = (_i64Add(($23|0),($26|0),($29|0),($32|0))|0);
+  $34 = tempRet0;
+  $35 = $4;
+  $36 = $35;
+  HEAP32[$36>>2] = $33;
+  $37 = (($35) + 4)|0;
+  $38 = $37;
+  HEAP32[$38>>2] = $34;
+  $39 = $3;
+  $40 = $39;
+  $41 = HEAP32[$40>>2]|0;
+  $42 = (($39) + 4)|0;
+  $43 = $42;
+  $44 = HEAP32[$43>>2]|0;
+  $45 = $2;
+  $46 = $45;
+  HEAP32[$46>>2] = $41;
+  $47 = (($45) + 4)|0;
+  $48 = $47;
+  HEAP32[$48>>2] = $44;
+  $49 = $4;
+  $50 = $49;
+  $51 = HEAP32[$50>>2]|0;
+  $52 = (($49) + 4)|0;
+  $53 = $52;
+  $54 = HEAP32[$53>>2]|0;
+  $55 = $3;
+  $56 = $55;
+  HEAP32[$56>>2] = $51;
+  $57 = (($55) + 4)|0;
+  $58 = $57;
+  HEAP32[$58>>2] = $54;
+  $59 = $5;
+  $60 = (($59) + 1)|0;
+  $5 = $60;
+ }
+ $61 = $4;
+ $62 = $61;
+ $63 = HEAP32[$62>>2]|0;
+ $64 = (($61) + 4)|0;
+ $65 = $64;
+ $66 = HEAP32[$65>>2]|0;
+ tempRet0 = ($66);
+ STACKTOP = sp;return ($63|0);
+}
 function __ZNSt3__224__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_j($0,$1,$2) {
  $0 = $0|0;
  $1 = $1|0;
@@ -67239,7 +67334,7 @@ var FUNCTION_TABLE_viiii = [b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,
 ,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24,b24
 ,b24,b24,b24];
 
-  return { _llvm_bswap_i32: _llvm_bswap_i32, dynCall_iiiiiiiiiiiii: dynCall_iiiiiiiiiiiii, dynCall_i: dynCall_i, stackSave: stackSave, _i64Subtract: _i64Subtract, ___udivdi3: ___udivdi3, dynCall_iiiiiii: dynCall_iiiiiii, setThrew: setThrew, dynCall_viii: dynCall_viii, _bitshift64Lshr: _bitshift64Lshr, dynCall_iiiiiid: dynCall_iiiiiid, dynCall_viiiiiiiiii: dynCall_viiiiiiiiii, _bitshift64Shl: _bitshift64Shl, dynCall_viiii: dynCall_viiii, _fflush: _fflush, dynCall_diii: dynCall_diii, ___cxa_is_pointer_type: ___cxa_is_pointer_type, dynCall_iii: dynCall_iii, dynCall_iiiiii: dynCall_iiiiii, _memset: _memset, dynCall_ii: dynCall_ii, _sbrk: _sbrk, _memcpy: _memcpy, stackAlloc: stackAlloc, ___muldi3: ___muldi3, dynCall_vii: dynCall_vii, ___uremdi3: ___uremdi3, dynCall_vi: dynCall_vi, dynCall_viiiiiii: dynCall_viiiiiii, getTempRet0: getTempRet0, setTempRet0: setTempRet0, _i64Add: _i64Add, dynCall_iiii: dynCall_iiii, _pthread_mutex_unlock: _pthread_mutex_unlock, __GLOBAL__I_000101: __GLOBAL__I_000101, dynCall_iiiiid: dynCall_iiiiid, _emscripten_get_global_libc: _emscripten_get_global_libc, dynCall_iiiii: dynCall_iiiii, __GLOBAL__sub_I_iostream_cpp: __GLOBAL__sub_I_iostream_cpp, dynCall_iiiiiiiiiii: dynCall_iiiiiiiiiii, dynCall_iiiiiiii: dynCall_iiiiiiii, _pthread_cond_broadcast: _pthread_cond_broadcast, dynCall_iiiiiiiiiiii: dynCall_iiiiiiiiiiii, _pthread_mutex_lock: _pthread_mutex_lock, ___errno_location: ___errno_location, dynCall_viiiii: dynCall_viiiii, dynCall_viiiiiiiiiiiiiii: dynCall_viiiiiiiiiiiiiii, ___cxa_can_catch: ___cxa_can_catch, _free: _free, runPostSets: runPostSets, dynCall_viiiiii: dynCall_viiiiii, establishStackSpace: establishStackSpace, _memmove: _memmove, stackRestore: stackRestore, _malloc: _malloc, __Z9printFibox: __Z9printFibox, dynCall_v: dynCall_v, dynCall_iiiiiiiii: dynCall_iiiiiiiii };
+  return { dynCall_viiiiiiiiii: dynCall_viiiiiiiiii, dynCall_iiiiiiiiiiiii: dynCall_iiiiiiiiiiiii, __Z10returnFiboi: __Z10returnFiboi, dynCall_i: dynCall_i, stackSave: stackSave, _i64Subtract: _i64Subtract, ___udivdi3: ___udivdi3, dynCall_iiiiiii: dynCall_iiiiiii, setThrew: setThrew, dynCall_viii: dynCall_viii, _bitshift64Lshr: _bitshift64Lshr, dynCall_iiiiiid: dynCall_iiiiiid, _bitshift64Shl: _bitshift64Shl, dynCall_viiii: dynCall_viiii, _fflush: _fflush, dynCall_diii: dynCall_diii, ___cxa_is_pointer_type: ___cxa_is_pointer_type, ___errno_location: ___errno_location, dynCall_iiiiii: dynCall_iiiiii, _memset: _memset, dynCall_ii: dynCall_ii, _sbrk: _sbrk, _memcpy: _memcpy, stackAlloc: stackAlloc, ___muldi3: ___muldi3, dynCall_vii: dynCall_vii, ___uremdi3: ___uremdi3, dynCall_vi: dynCall_vi, dynCall_viiiiiii: dynCall_viiiiiii, getTempRet0: getTempRet0, setTempRet0: setTempRet0, _i64Add: _i64Add, dynCall_iiii: dynCall_iiii, _pthread_mutex_unlock: _pthread_mutex_unlock, __GLOBAL__I_000101: __GLOBAL__I_000101, dynCall_iiiiid: dynCall_iiiiid, _emscripten_get_global_libc: _emscripten_get_global_libc, dynCall_iiiii: dynCall_iiiii, __GLOBAL__sub_I_iostream_cpp: __GLOBAL__sub_I_iostream_cpp, dynCall_iiiiiiiiiii: dynCall_iiiiiiiiiii, dynCall_iiiiiiii: dynCall_iiiiiiii, _pthread_cond_broadcast: _pthread_cond_broadcast, dynCall_iiiiiiiiiiii: dynCall_iiiiiiiiiiii, _pthread_mutex_lock: _pthread_mutex_lock, _llvm_bswap_i32: _llvm_bswap_i32, dynCall_viiiii: dynCall_viiiii, dynCall_viiiiiiiiiiiiiii: dynCall_viiiiiiiiiiiiiii, ___cxa_can_catch: ___cxa_can_catch, _free: _free, runPostSets: runPostSets, dynCall_viiiiii: dynCall_viiiiii, establishStackSpace: establishStackSpace, _memmove: _memmove, stackRestore: stackRestore, _malloc: _malloc, dynCall_iii: dynCall_iii, __Z9printFibox: __Z9printFibox, dynCall_v: dynCall_v, dynCall_iiiiiiiii: dynCall_iiiiiiiii };
 })
 // EMSCRIPTEN_END_ASM
 (Module.asmGlobalArg, Module.asmLibraryArg, buffer);
@@ -67248,6 +67343,12 @@ var real___Z9printFibox = asm["__Z9printFibox"]; asm["__Z9printFibox"] = functio
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real___Z9printFibox.apply(null, arguments);
+};
+
+var real___Z10returnFiboi = asm["__Z10returnFiboi"]; asm["__Z10returnFiboi"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real___Z10returnFiboi.apply(null, arguments);
 };
 
 var real_stackSave = asm["stackSave"]; asm["stackSave"] = function() {
@@ -67304,10 +67405,10 @@ var real__sbrk = asm["_sbrk"]; asm["_sbrk"] = function() {
   return real__sbrk.apply(null, arguments);
 };
 
-var real____errno_location = asm["___errno_location"]; asm["___errno_location"] = function() {
+var real__llvm_bswap_i32 = asm["_llvm_bswap_i32"]; asm["_llvm_bswap_i32"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real____errno_location.apply(null, arguments);
+  return real__llvm_bswap_i32.apply(null, arguments);
 };
 
 var real____muldi3 = asm["___muldi3"]; asm["___muldi3"] = function() {
@@ -67376,10 +67477,10 @@ var real__pthread_cond_broadcast = asm["_pthread_cond_broadcast"]; asm["_pthread
   return real__pthread_cond_broadcast.apply(null, arguments);
 };
 
-var real__llvm_bswap_i32 = asm["_llvm_bswap_i32"]; asm["_llvm_bswap_i32"] = function() {
+var real____errno_location = asm["___errno_location"]; asm["___errno_location"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real__llvm_bswap_i32.apply(null, arguments);
+  return real____errno_location.apply(null, arguments);
 };
 
 var real____cxa_can_catch = asm["___cxa_can_catch"]; asm["___cxa_can_catch"] = function() {
@@ -67424,6 +67525,7 @@ var real__pthread_mutex_lock = asm["_pthread_mutex_lock"]; asm["_pthread_mutex_l
   return real__pthread_mutex_lock.apply(null, arguments);
 };
 var __Z9printFibox = Module["__Z9printFibox"] = asm["__Z9printFibox"];
+var __Z10returnFiboi = Module["__Z10returnFiboi"] = asm["__Z10returnFiboi"];
 var stackSave = Module["stackSave"] = asm["stackSave"];
 var getTempRet0 = Module["getTempRet0"] = asm["getTempRet0"];
 var ___udivdi3 = Module["___udivdi3"] = asm["___udivdi3"];
@@ -67435,7 +67537,7 @@ var ___cxa_is_pointer_type = Module["___cxa_is_pointer_type"] = asm["___cxa_is_p
 var _memset = Module["_memset"] = asm["_memset"];
 var _sbrk = Module["_sbrk"] = asm["_sbrk"];
 var _memcpy = Module["_memcpy"] = asm["_memcpy"];
-var ___errno_location = Module["___errno_location"] = asm["___errno_location"];
+var _llvm_bswap_i32 = Module["_llvm_bswap_i32"] = asm["_llvm_bswap_i32"];
 var ___muldi3 = Module["___muldi3"] = asm["___muldi3"];
 var ___uremdi3 = Module["___uremdi3"] = asm["___uremdi3"];
 var stackAlloc = Module["stackAlloc"] = asm["stackAlloc"];
@@ -67447,7 +67549,7 @@ var __GLOBAL__I_000101 = Module["__GLOBAL__I_000101"] = asm["__GLOBAL__I_000101"
 var _emscripten_get_global_libc = Module["_emscripten_get_global_libc"] = asm["_emscripten_get_global_libc"];
 var __GLOBAL__sub_I_iostream_cpp = Module["__GLOBAL__sub_I_iostream_cpp"] = asm["__GLOBAL__sub_I_iostream_cpp"];
 var _pthread_cond_broadcast = Module["_pthread_cond_broadcast"] = asm["_pthread_cond_broadcast"];
-var _llvm_bswap_i32 = Module["_llvm_bswap_i32"] = asm["_llvm_bswap_i32"];
+var ___errno_location = Module["___errno_location"] = asm["___errno_location"];
 var ___cxa_can_catch = Module["___cxa_can_catch"] = asm["___cxa_can_catch"];
 var _free = Module["_free"] = asm["_free"];
 var runPostSets = Module["runPostSets"] = asm["runPostSets"];
